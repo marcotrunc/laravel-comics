@@ -1,0 +1,41 @@
+header{
+    #top-header{
+        background-color: $blue;
+        .container-fluid span{
+            color: #fff;
+            margin-right: 30px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        .container-fluid a{
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+    #main-header{
+            border-bottom: 1px solid lightgray;
+        nav ul {
+            list-style-type: none;
+            margin-bottom: 0;
+            padding: 0;
+            li{
+                height: 100%;
+                &:hover{
+                    border-bottom: 2px solid $blue;
+                }
+                a{
+                    color: #000000;
+                    text-transform: uppercase;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        input[type="text"]{
+            border: none;
+            border-bottom: 2px solid $blue;
+        }
+    }
+}
