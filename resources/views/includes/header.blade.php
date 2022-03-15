@@ -1,3 +1,6 @@
+@php
+    $nav_main_menu = config('nav_main')   
+@endphp
 <header>
     <section id="top-header">
         <div class="container">
@@ -18,16 +21,9 @@
                 <div class="col-8 h-100">
                     <nav>
                         <ul class="d-flex justify-content-between">
-                            <li><a href="#">Characters</a></li>
-                            <li><a href="#">Comics</a></li>
-                            <li><a href="#">Movies</a></li>
-                            <li><a href="#">Tv</a></li>
-                            <li><a href="#">Games</a></li>
-                            <li><a href="#">Collectibles</a></li>
-                            <li><a href="#">Videos</a></li>
-                            <li><a href="#">Fans</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Shop</a></li>
+                            @foreach ($nav_main_menu as $menu)
+                            <li><a href="{{route($menu['route_name'])}}">{{$menu['text']}}</a></li>    
+                            @endforeach
                         </ul>    
                     </nav>
                 </div>
