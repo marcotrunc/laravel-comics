@@ -1,6 +1,6 @@
 <header>
     <section id="top-header">
-        <div class="container-fluid">
+        <div class="container">
             <div class="d-flex justify-content-end py-1">
                 <span>DC Power Visa</span>
                 <a href="#">Additional Dc Sities</a>
@@ -8,7 +8,7 @@
         </div>
     </section>
     <section id="main-header">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row  justify-content-between align-items-center">
                 <div class="col-1 py-4">
                     <div class="logo-container">

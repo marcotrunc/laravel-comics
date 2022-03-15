@@ -10022,13 +10022,13 @@ h3 {
 header #top-header {
   background-color: #0282F9;
 }
-header #top-header .container-fluid span, header #top-header .container-sm span, header #top-header .container-md span, header #top-header .container-lg span, header #top-header .container-xl span {
+header #top-header span {
   color: #fff;
   margin-right: 30px;
   text-transform: uppercase;
   font-weight: 600;
 }
-header #top-header .container-fluid a, header #top-header .container-sm a, header #top-header .container-md a, header #top-header .container-lg a, header #top-header .container-xl a {
+header #top-header a {
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
@@ -10077,4 +10077,51 @@ header #main-header input[type=text] {
 #top-footer h6 {
   cursor: pointer;
   color: #fff;
+}
+
+#main-footer {
+  background-image: url("../images/footer-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+#main-footer #left-footer ul {
+  padding: 0;
+  list-style-type: none;
+}
+#main-footer #left-footer ul li {
+  text-decoration: none;
+  cursor: pointer;
+  color: grey;
+  font-size: 0.8rem;
+  margin-bottom: 0.15rem;
+}
+#main-footer #left-footer span {
+  font-size: 0.8rem;
+  color: grey;
+}
+#main-footer #right-footer {
+  position: relative;
+}
+#main-footer #right-footer figure {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-10%);
+}
+
+#bottom-footer {
+  background-color: #303030;
+  position: relative;
+  z-index: 1;
+}
+#bottom-footer .sign-btn a {
+  text-decoration: none;
+  padding: 15px 20px;
+  border: 2px solid #0282F9;
+}
+#bottom-footer .follow a {
+  color: #0282F9;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  text-decoration: none;
 }
