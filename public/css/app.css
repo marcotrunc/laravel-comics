@@ -10068,6 +10068,34 @@ header #main-header input[type=text] {
   background-repeat: no-repeat;
 }
 
+main {
+  background-color: #000;
+  color: #fff;
+}
+main .container {
+  position: relative;
+}
+main .title-curr-ser {
+  background-color: #0282F9;
+  padding: 10px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0%, -50%);
+}
+main .title-curr-ser a {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+main .card {
+  border: 1px solid #000;
+}
+main .card-body {
+  background-color: #000;
+}
+
 #top-footer {
   background-color: #0282F9;
 }

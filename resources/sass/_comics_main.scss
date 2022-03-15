@@ -1,0 +1,27 @@
+main{
+    background-color: #000;
+    color: #fff;
+    .container{
+        position: relative
+    }
+    .title-curr-ser{
+        background-color: $blue;
+        padding: 10px 20px;
+        position: absolute;
+        top: 0;
+        left:0;
+        transform: translate(0%,-50%);
+        a{
+            font-size: 1.7rem;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    .card{
+        border: 1px solid #000;
+    }
+    .card-body{
+        background-color: #000;
+    }
+}
