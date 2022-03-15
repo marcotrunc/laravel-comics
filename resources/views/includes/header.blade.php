@@ -2,14 +2,16 @@
     $nav_main_menu = config('nav_main')   
 @endphp
 <header>
+    {{-- Top Header --}}
     <section id="top-header">
         <div class="container">
             <div class="d-flex justify-content-end py-1">
-                <span>DC Power Visa</span>
+                <a href="#" class="d-inline-block mx-3">DC Power Visa</a>
                 <a href="#">Additional Dc Sities</a>
             </div>
         </div>
     </section>
+    {{-- Main Header --}}
     <section id="main-header">
         <div class="container">
             <div class="row  justify-content-between align-items-center">
@@ -18,7 +20,7 @@
                         <img src="{{ asset('images/dc-logo.png') }}" alt="" class="img-fluid"/>
                     </div>
                 </div>
-                <div class="col-8 h-100">
+                <div class="col-8 ">
                     <nav>
                         <ul class="d-flex justify-content-between">
                             @foreach ($nav_main_menu as $menu)

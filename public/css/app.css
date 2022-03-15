@@ -10022,16 +10022,11 @@ h3 {
 header #top-header {
   background-color: #0282F9;
 }
-header #top-header span {
-  color: #fff;
-  margin-right: 30px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
 header #top-header a {
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
+  text-decoration: none;
 }
 header #main-header {
   border-bottom: 1px solid lightgray;
@@ -10042,16 +10037,15 @@ header #main-header nav ul {
   padding: 0;
 }
 header #main-header nav ul li {
-  height: 100%;
+  padding: 40px 0px;
 }
-header #main-header nav ul li:hover {
-  border-bottom: 2px solid #0282F9;
+header #main-header nav ul li:hover a {
+  border-bottom: 4px solid #0282F9;
 }
 header #main-header nav ul li a {
+  padding: 40px 0px;
   color: #000000;
   text-transform: uppercase;
-}
-header #main-header nav ul li a:hover {
   text-decoration: none;
 }
 header #main-header input[type=text] {

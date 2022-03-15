@@ -1,3 +1,7 @@
+@php
+    $social_icons = config('social')  
+@endphp
+
 <section id="top-footer"> 
     <div class="container py-5 d-flex justify-content-center">
         <div class="d-flex justify-content-between">
@@ -105,6 +109,7 @@
          </div>
      </div>
  </section>
+ {{-- Bottom Footer --}}
  <section id="bottom-footer" class="py-5">
      <div class="container">
          <div class="row align-items-center">
@@ -118,21 +123,12 @@
                      <a href="#" class="text-uppercase">Follow Us</a>
                  </div>
                  <div class="icon-social d-flex justify-content-between align-itemse-center">
+                     
+                    @foreach ($social_icons as $icon)
                      <figure class="mx-2">
-                         <img src="{{asset('images/footer-facebook.png')}}" alt="">
-                     </figure>
-                     <figure class="mx-2">
-                         <img src="{{asset('images/footer-facebook.png')}}" alt="">
-                     </figure>
-                     <figure class="mx-2">
-                         <img src="{{asset('images/footer-facebook.png')}}" alt="">
-                     </figure>
-                     <figure class="mx-2">
-                         <img src="{{asset('images/footer-facebook.png')}}" alt="">
-                     </figure>
-                     <figure class="mx-2">
-                         <img src="{{asset('images/footer-facebook.png')}}" alt="">
-                     </figure>
+                          <img src="{{asset($icon['asset_url'])}}" alt="">
+                      </figure>
+                     @endforeach
                      
                  </div>
              </div>

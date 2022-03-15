@@ -1,16 +1,11 @@
 header{
     #top-header{
         background-color: $blue;
-         span{
-            color: #fff;
-            margin-right: 30px;
-            text-transform: uppercase;
-            font-weight: 600;
-        }
             a{
             color: #fff;
             text-transform: uppercase;
             font-weight: 600;
+            text-decoration: none;
         }
     }
     #main-header{
@@ -20,16 +15,15 @@ header{
             margin-bottom: 0;
             padding: 0;
             li{
-                height: 100%;
-                &:hover{
-                    border-bottom: 2px solid $blue;
+                padding: 40px 0px; 
+                &:hover a{
+                    border-bottom: 4px solid $blue;
                 }
                 a{
+                    padding: 40px 0px; 
                     color: #000000;
                     text-transform: uppercase;
-                    &:hover{
-                        text-decoration: none;
-                    }
+                    text-decoration: none;
                 }
             }
         }
