@@ -24,6 +24,19 @@ Route::get('/comics', function () {
     return view('comics_page');
 })->name('comics');
 
+//Comics Details
+Route::get('/comics/{id}', function ($id) {
+    $product = config('products');
+
+    if (!is_numeric($id) || $id >= count($product)) {
+        abort('error 404');
+    };
+
+    $comic = $product[$id];
+
+    return view('comic', ['comic' => $comic]);
+})->name('comic');
+
 //Movies
 Route::get('/movies', function () {
     return view('movies');

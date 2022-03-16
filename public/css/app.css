@@ -10019,6 +10019,14 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.pr-100px {
+  padding-right: 100px;
+}
+
+.pl-100px {
+  padding-left: 100px;
+}
+
 header #top-header {
   background-color: #0282F9;
 }
@@ -10062,14 +10070,14 @@ header #main-header input[type=text] {
   background-repeat: no-repeat;
 }
 
-main {
+main.comics {
   background-color: #000;
   color: #fff;
 }
-main .container {
+main.comics .container {
   position: relative;
 }
-main .title-curr-ser {
+main.comics .title-curr-ser {
   background-color: #0282F9;
   padding: 10px 20px;
   position: absolute;
@@ -10077,17 +10085,80 @@ main .title-curr-ser {
   left: 0;
   transform: translate(0%, -50%);
 }
-main .title-curr-ser a {
+main.comics .title-curr-ser a {
   font-size: 1.7rem;
   font-weight: bold;
   color: #fff;
   text-decoration: none;
 }
-main .card {
+main.comics .row a {
+  text-decoration: none;
+}
+main.comics .row a h6 {
+  text-decoration: none;
+  color: white;
+}
+main.comics .row a .card {
   border: 1px solid #000;
 }
-main .card-body {
+main.comics .row a .card-body {
   background-color: #000;
+}
+
+main.comic .left-section {
+  padding-left: 100px;
+}
+main.comic .left-section h2 {
+  color: #0282F9;
+}
+main.comic .left-section .price {
+  width: 70%;
+  border: 1px solid #4daa51;
+  background-color: #55ba59;
+  padding: 8px 10px;
+  color: #fff;
+}
+main.comic .left-section .available {
+  width: 30%;
+  border: 1px solid #4daa51;
+  background-color: #55ba59;
+  padding: 8px 10px;
+}
+main.comic .left-section .available select {
+  width: 100%;
+  color: #fff;
+  background-color: #55ba59;
+  border: 1px solid #55ba59;
+}
+main.comic .left-section .available select:focus-visible {
+  outline: none;
+}
+main.comic .right-section {
+  padding-right: 100px;
+}
+main.comic .bottom-section {
+  background-color: #f6f6f6;
+}
+main.comic .bottom-section h4 {
+  color: #013f7e;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+main.comic .bottom-section table {
+  width: 100%;
+}
+main.comic .bottom-section table tr {
+  border-top: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+}
+main.comic .bottom-section table tr td {
+  color: #58b5dd;
+  font-size: 0.7rem;
+}
+main.comic .bottom-section table tr td h6 {
+  margin-right: 100px;
+  color: #013f7e;
+  font-size: 0.8rem;
 }
 
 #top-footer {

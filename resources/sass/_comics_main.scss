@@ -1,4 +1,4 @@
-main{
+main.comics{
     background-color: #000;
     color: #fff;
     .container{
@@ -18,10 +18,17 @@ main{
             text-decoration: none;
         }
     }
-    .card{
-        border: 1px solid #000;
-    }
-    .card-body{
-        background-color: #000;
+    .row a{
+        text-decoration: none;
+        h6{
+            text-decoration: none;
+            color: white;
+        }
+        .card{
+            border: 1px solid #000;
+        }
+        .card-body{
+            background-color: #000;
+        }
     }
 }
